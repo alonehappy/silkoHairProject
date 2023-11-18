@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Poppins:wght@200&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --half-white: #f7f7f7;
+  --light-color: #54545400;
+  --green: #598200;
+  --half-dark: #1a1a1a;
+  --grey: #707070;
+  --half-grey: #00000029;
+  --light-grey: #eeeef0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.btn-all {
+  padding: 15px 55px;
+  border-radius: 6px;
+  margin-top: 2rem;
+  margin-left: 1.3rem;
+  background-color: var(--green);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+.btn-all:hover{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+/* home section */
+#home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    transparent url("./silkoimg/home-bg.png");
+  background-repeat: no-repeat;
+  background-position: 30% 10%;
+  background-size: cover;
+}
+#home header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0.8rem 2rem 0 0;
+}
+.navbar a {
+  color: var(--white);
+  margin-left: 30px;
+  font-size: 14px;
+}
+.navbar a:hover {
+  font-size: 18px;
+}
+.main-content {
+  width: 65rem;
+  height: 45rem;
+  margin: 8rem 0 0 20rem;
+  padding: 4rem;
+}
+.main-content h1 {
+  color: var(--white);
+  font-size: 6rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.main-content h2 {
+  color: var(--white);
+  text-align: left;
+  font-size: 3.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-weight: lighter;
+  margin-top: 1rem;
+  padding-left: 10px;
+}
+.main-content h2 span {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+}
+.main-content p {
+  color: var(--white);
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 10px;
+  font-size: 1.23rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font: normal normal;
+  font-weight: lighter;
+  line-height: 20px;
+}
+.main-content p span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* home section */
+
+/* benefit section start here  */
+#benefit-container {
+  width: 100%;
+  height: 90vh;
+  background-color: var(--half-white);
+}
+
+#benefit-container .heading {
+  display: flex;
+  justify-content: center;
+}
+.heading h2 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: medium;
+  color: var(--half-dark);
+  margin: 2rem;
+}
+
+#benefit-container .main-imgs-text {
+  width: 1200px;
+  margin: auto;
+  /* border: 2px solid red; */
+  height: 89%;
+}
+.main-imgs-text {
+  display: flex;
+  justify-content: space-around;
+}
+.main-imgs-text .img-text {
+  /* border: 2px solid green; */
+  width: 350px;
+}
+.img-text .left-img-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-text .upper-img-text {
+  width: 50%;
+  height: 45%;
+  display: flex;
+  margin-top: 9rem;
+}
+.left-img-text .upper-img-text {
+  margin-left: 10rem;
+}
+.left-img-text .lower-img-text {
+  margin-left: 13rem;
+  margin-top: -3rem;
+}
+.right-img-text .upper-img-text {
+  margin-left: -4rem;
+}
+.right-img-text .lower-img-text {
+  margin-top: -3rem;
+}
+.img-text .upper-img-text img {
+  width: 100px;
+  height: 100px;
+  margin-left: 7rem;
+}
+.img-text .upper-img-text h3 {
+  margin-top: 3rem;
+  width: 120px;
+  font-weight: bold;
+  color: var(--black);
+  opacity: 100%;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+.img-text .upper-img-text h3::after {
+  content: "";
+  border: 2px solid var(--grey);
+  width: 200px;
+  height: 0px;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  z-index: 999;
+}
+
+.main-imgs-text .middle-img-text {
+  display: flex;
+}
+.main-imgs-text .middle-img-text img {
+  align-self: flex-end;
+  height: 490px;
+  margin-left: -19rem;
+}
+
+.img-text .lower-img-text {
+  display: flex;
+  width: 50%;
+  height: 45%;
+}
+.img-text .lower-img-text img {
+  width: 100px;
+  height: 100px;
+  margin-right: 4rem;
+}
+.img-text .lower-img-text h3 {
+  margin-top: 3rem;
+  width: 140px;
+  font-weight: bold;
+  color: var(--black);
+  opacity: 100%;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+.img-text .lower-img-text h3::after {
+  content: "";
+  border: 2px solid var(--grey);
+  width: 140px;
+  height: 0px;
+  display: flex;
+  margin-top: 1rem;
+  z-index: 999;
+  margin-left: -7rem;
+}
+
+/* benefit section ends here  */
+
+/* hair oil section start here  */
+
+#hair-oil .first-heading {
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0 4rem;
+}
+.first-heading h2 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: medium;
+  color: var(--half-dark);
+  margin: 2rem;
+}
+#hair-oil .items-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 70vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.items-container .item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  background-color: var(--white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.items-container .item img {
+  height: 170px;
+}
+.items-container .item:hover {
+  box-shadow: rgba(60, 210, 150, 0.25) 0px 6px 12px -2px,
+    rgba(167, 220, 88, 0.52) 0px 3px 7px -3px;
+  width: 205px;
+  height: 205px;
+}
+.all-text {
+  display: flex;
+  flex-direction: column;
+  margin: 1.4rem 0 0 2rem;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+.all-text .p-4 {
+  font-size: 1rem;
+}
+
+/* hair oil section ends here  */
+
+/* soft & silky hair section start */
+
+#silky-hair {
+  height: 120vh;
+  background: transparent url("./silkoimg/mg-5-2x.png");
+  background-size: 150%;
+  margin-top: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+#silky-hair .silky-content {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 45rem;
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
+  padding: 4rem;
+}
+.silky-content .silky-heading {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+}
+.silky-para .para {
+  color: var(--white);
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 10px;
+  font-size: 1.23rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+.silky-para .para span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#silky-hair .btn {
+  position: absolute;
+  bottom: 5rem;
+  left: 13rem;
+}
+
+/* soft & silky hair section end */
+
+/* testimonial start here  */
+#testimonials{
+  width: 100%;
+  height: 80vh;
+  background-color: var(--half-white);
+}
+#testimonials .testimonial-content{
+  height: 100%;
+  width: 1200px;
+  position: relative;
+  margin: auto;
+}
+.testimonial-content .testimonial-heading{
+  display: flex;
+  justify-content: center;
+}
+.testimonial-heading h2{
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: medium;
+  color: var(--half-dark);
+  margin: 6rem 0;
+}
+.img-text-cards{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.img-text-cards .cards{
+  width: 430px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+  
+}
+.img-text-cards .cards:hover{
+  /* box-shadow: rgba(65, 65, 98, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  box-shadow: rgba(50, 93, 68, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* background-color: red; */
+}
+.img-text-cards .card-1{
+  background-color: var(--white);
+  position: absolute;
+  left: 1rem;
+}
+.img-text-cards .cards .card-content{
+  text-align: center;
+}
+.card-content p{
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-top: -2rem;
+}
+.card-content h4{
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+
+}
+.card-1:hover{
+z-index: 4;
+}
+.card-3:hover{
+z-index: 4;
+}
+.img-text-cards .cards .card-content .inverted{
+ margin-top: -25rem;
+}
+.img-text-cards .card-2{
+  background-color: var(--green);
+  width: 400px;
+  z-index: 3;
+  position: absolute;
+  right: 41rem;
+  top: 10rem;
+}
+.img-text-cards .card-3{
+  background-color: var(--white);
+  position: absolute;
+  right: 1rem;
+}
+/* testimonial end here  */
+
+/* contact section starts from here  */
+#contacts{
+  width: 100%;
+  height: 50vh;
+  background: var(--green);
+  display: flex;
+  flex-direction: column;
+}
+#contacts .contact-content{
+  width: 1200px;
+  height: 80%;
+  margin: auto;
+  padding: 4rem;
+  display: flex;
+}
+.contact-content .content{
+  width: 350px;
+  height: inherit;
+  padding: 5rem;
+  cursor: pointer;
+}
+.contact-content .right-content{
+  margin-left: 3rem;
+}
+.contact-content .right-content h3,
+.contact-content .left-content h3{
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.right-content p,
+.left-content p{
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.3rem;
+
+}
+.mid-logo{
+display: flex;
+justify-content: center;
+}
+.mid-logo img{
+  height: 70px;
+  margin-top: 4rem;
+}
+.footer{
+  width: 1200px;
+  margin: auto;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .copy-right{
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-left: -21rem;
+}
+.footer .social-media-links{
+  margin-top: 1.7rem;
+  margin-right: 1rem;
+  
+}
+.footer .social-media-links img{
+  height: 30px;
+  margin-left: 1rem;
+}
+
+/* contact section ends from here  */
